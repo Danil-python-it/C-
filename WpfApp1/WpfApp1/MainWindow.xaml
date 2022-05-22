@@ -1,0 +1,56 @@
+﻿<Window x:Name="MainWindow1" x:Class="шещп.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:шещп"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Activated="MainWindow1_Activated" MouseDown="MainWindow1_MouseDown" Background="#FF10239B">
+    <Grid x:Name="can">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TabControl HorizontalAlignment="Left" Margin="0,324,0,0" Width="293">
+            <TabItem Header="TypeKyst" Background="#FFECB012">
+                <Grid Background="#FFE5E5E5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="8*"/>
+                        <ColumnDefinition Width="55*"/>
+                        <ColumnDefinition Width="54*"/>
+                        <ColumnDefinition Width="57*"/>
+                        <ColumnDefinition Width="113*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="7*"/>
+                        <RowDefinition Height="56*"/>
+                        <RowDefinition Height="4*"/>
+                    </Grid.RowDefinitions>
+                    <Button Content="" Margin="2,3,3,3" Grid.Row="1" Grid.Column="1"/>
+                    <Button Content="Button" Margin="2,3" Grid.Row="1" Grid.Column="2"/>
+                    <Button Content="Button" Margin="3,3,4,3" Grid.Row="1" Grid.Column="3">
+                        <Button.Background>
+                            <ImageBrush/>
+                        </Button.Background>
+                    </Button>
+                </Grid>
+            </TabItem>
+            <TabItem Header="TypeObject" BorderBrush="#FFC17F0A">
+                <TabItem.Background>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                        <GradientStop Color="White" Offset="1"/>
+                    </LinearGradientBrush>
+                </TabItem.Background>
+                <Grid Background="#FFE2AE40">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="230*"/>
+                        <ColumnDefinition Width="57*"/>
+                    </Grid.ColumnDefinitions>
+                    <Button x:Name="NewAnim" Content="NewAnimal" Click="NewAnim_Click" FontSize="8" Margin="10,10,169.598,7"/>
+                    <Button x:Name="NewTree" Content="NewTreeas" Click="NewTree_Click" FontSize="8" Margin="68,10,111.598,7"/>
+                    <Button x:Name="None" Content="None" Click="None_Click" FontSize="8" Margin="126,11,53.598,6"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
